@@ -1,0 +1,17 @@
+git config –global user.name “AshKamdar”
+git config –global user.email “ash.tsys@gmail.com”
+
+git clone https://github.com/AshKamdar/AdventuresInCloud.git    //into environment folder
+
+
++++send the modification to repo+++
+git status
+git add –all/file
+git commit -m “v1.0”
+git push
++++++++++++++++++++++++++++++++++++
+
+
++++take the modification from repo+++
+git push
++++++++++++++++++++++++++++++++++++++
