@@ -1,0 +1,4 @@
+typing-extensions
+asgiref
+sqlparse
+django
