@@ -15,3 +15,6 @@ python manage.py makemigrations     #for new migrations made
 python manage.py migrate
 python manage.py createsuperuser    #ubuntu/ubuntu
 python manage.py runserver 0.0.0.0:8000     #before run it you must complete with your AWS_Public_IP in Allow_host in settings.py
+#-----create the apps
+python manage.py startapp recon_passive
+python manage.py startapp recon_active
