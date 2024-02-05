@@ -31,6 +31,8 @@ ALLOWED_HOSTS = ["3.123.25.5"]
 # Application definition
 
 INSTALLED_APPS = [
+    'recon_active',
+    'recon_passive',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
