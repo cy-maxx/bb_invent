@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-p35t)kmfj357ai(h!an*4#g)gzg1nkgr5=7s!lo51n(myw(+uf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["3.123.25.5"]
+ALLOWED_HOSTS = ["3.67.178.177"]
 
 
 # Application definition
@@ -77,8 +77,14 @@ WSGI_APPLICATION = 'app_cymaxx.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'db_cymaxx',
+        'USER': 'cymaxx',
+        'PASSWORD': 'cymaxx',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
