@@ -4,4 +4,4 @@ from django.http import HttpRequest,HttpResponse
 # Create your views here.
 
 def index(request):
-    return HttpResponse("Merge recon_passive!")
+    return render(request, "recon_passive/index.html")

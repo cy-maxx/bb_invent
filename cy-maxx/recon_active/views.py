@@ -7,8 +7,7 @@ from django.template.loader import render_to_string
 
 
 def index(request):
-    data = render_to_string("recon_active/ra.html")
-    return HttpResponse(data)
+    return render(request, "recon_active/index.html")
 
 
 # lunile = {

@@ -25,14 +25,20 @@ SECRET_KEY = 'django-insecure-p35t)kmfj357ai(h!an*4#g)gzg1nkgr5=7s!lo51n(myw(+uf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["3.67.178.177"]
+ALLOWED_HOSTS = ["3.122.204.98"]
 
 
 # Application definition
 
 INSTALLED_APPS = [
+#Apps
+    'first_page',
     'recon_active',
     'recon_passive',
+#modules
+    'bootstrap5',
+#
+    'django_extensions',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -56,7 +62,9 @@ ROOT_URLCONF = 'app_cymaxx.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / "templates"
+            ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
