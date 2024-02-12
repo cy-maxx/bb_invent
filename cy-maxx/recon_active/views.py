@@ -1,13 +1,14 @@
 from django.shortcuts import render
 from django.http import HttpRequest, HttpResponse, HttpResponseNotFound
-from django.template.loader import render_to_string
+
 
 
 # Create your views here.
 
 
 def index(request):
-    return render(request, "recon_active/index.html")
+    myctx = {'first_context': "It works"}
+    return render(request, "recon_active/index.html", context=myctx)
 
 
 # lunile = {
