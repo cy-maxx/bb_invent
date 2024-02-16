@@ -1,0 +1,2 @@
+~via Putty and WinSCP
+!!!!  https://www.nakivo.com/blog/creating-an-ssh-connection-with-amazon-ec2-instance-connect/ !!!!
