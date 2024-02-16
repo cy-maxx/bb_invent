@@ -1,2 +1,6 @@
 ~via Putty and WinSCP
 !!!!  https://www.nakivo.com/blog/creating-an-ssh-connection-with-amazon-ec2-instance-connect/ !!!!
+
+
+!!! access to EC2 via Visual Studio
+Solved! For most people, the issue is that you did not make the .pem file executable. You need to chmod 400 yourkey.pem for mac, I think 755 for linux, not sure about windows, then move the key into your ssh folder mv yourkey.pem ~/.ssh
