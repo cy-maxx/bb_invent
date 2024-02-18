@@ -1,0 +1,31 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amass Configuration</title>
+</head>
+<body>
+    <a href="{% url 'tools_first_page' %}">Tools Page!</a>
+    <h1>Amass Page!</h1>
+</body>
+</html> -->
+
+<!-- config_tools/templates/config_tools/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amass Index</title>
+</head>
+<body>
+
+<h2>{{ project_info.app_name }}</h2>
+<p>{{ project_info.remark }}</p>
+<a href="{{ project_info.github_link }}" target="_blank">GitHub Link</a>
+
+<a href="{% url 'add_tool_page' %}"><button>Add Tool</button></a>
+
+</body>
+</html>

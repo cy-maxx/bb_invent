@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include("first_page.urls")),
     path('ra/', include("recon_active.urls")),
-    path('rp/', include("recon_passive.urls"))
+    path('rp/', include("recon_passive.urls")),
+    path('configtools/', include("config_tools.urls"))
     ]
