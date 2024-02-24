@@ -9,6 +9,9 @@ def index(request):
 def index_amass(request):
     return render(request, 'config_tools/amass.html')
 
+def config_subfinder(request):
+    return render(request, 'config_tools/configsubfinder.html')
+
 def add_tool_page(request):
     form = ProjectInfoForm()
     if request.method == 'POST':

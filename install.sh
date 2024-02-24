@@ -3,14 +3,14 @@
 #!!!install version with pip!!!#
 sudo apt update
 sudo apt install python3-pip python3-venv -y
-sudo apt install python3-dev libpq-dev postgresql postgresql-contrib -y
+sudo apt install python3-dev libpq-dev postgresql postgresql-contrib httping -y
 
 #---install Django
 mkdir ~/cy-maxx
 cd cy-maxx
 python3 -m venv env_cy-maxx
 source env_cy-maxx/bin/activate
-pip install django psycopg2 django-extensions django-bootstrap-v5 python-whois
+pip install django psycopg2 django-extensions django-bootstrap-v5 python-whois httpx httpx[cli]
 django-admin startproject app_cymaxx .
 python manage.py makemigrations     #for new migrations made
 python manage.py migrate
@@ -37,3 +37,19 @@ sudo ufw allow 8000
 
 #---install, on PC, pgAdmin for PostgreSQL
 #https://www.pgadmin.org/download/
+ 
+#---Install tools---
+
+#golang
+sudo snap install go --classic
+#subfinder
+sudo go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
+vi /root/.bashrc
+    >export PATH=$PATH:/root/go/bin
+sudo mv /root/go/bin/subfinder /usr/local/bin/
+vi /home/ubuntu/.config/subfinder/provider-config.yaml
+##---configure the provider-config.yaml file with your APIs keys.
+##how it works
+subfinder -dL targets/../scope.txt -all -oD /recon -json subfinder_recon.json -cs
+
+
