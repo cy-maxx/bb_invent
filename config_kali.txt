@@ -1,0 +1,13 @@
+!!!! Firefox !!!!
+https://1password.com/business-pricing
+https://addons.mozilla.org/en-US/firefox/addon/multi-account-containers/
+
+!!!!! Proxy !!!!!
+_Autorize
+_Logger++
+_InQL-Introspection GraphQL Scanner
+_Brida
+_JSON Decoder
+
+!Payloads - https://github.com/swisskyrepo/PayloadsAllTheThings
+
