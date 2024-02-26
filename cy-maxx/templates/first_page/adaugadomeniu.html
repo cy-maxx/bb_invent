@@ -1,0 +1,10 @@
+{% extends 'first_page/base.html' %}
+
+{% block content %}
+    <h2>Adauga Domeniu</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Adauga</button>
+    </form>
+{% endblock %}

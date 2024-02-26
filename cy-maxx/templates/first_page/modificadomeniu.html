@@ -1,0 +1,17 @@
+{% extends 'first_page/base.html' %}
+
+{% block content %}
+    <h2>Modifica Domeniu</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="domain_select">Select Domain:</label>
+        <select name="domain_select" id="domain_select">
+            {% for domain in domains %}
+                <option value="{{ domain.domain }}" {% if domain.domain == object.domain %}selected{% endif %}>{{ domain.domain }}</option>
+            {% endfor %}
+        </select>
+        <br>
+        {{ form.as_p }}
+        <button type="submit">Modifica</button>
+    </form>
+{% endblock %}

@@ -10,7 +10,7 @@ mkdir ~/cy-maxx
 cd cy-maxx
 python3 -m venv env_cy-maxx
 source env_cy-maxx/bin/activate
-pip install django psycopg2 django-extensions django-bootstrap-v5 python-whois httpx httpx[cli]
+pip install django psycopg2 django-extensions django-bootstrap-v5 python-whois httpx httpx[cli] googlesearch-python
 django-admin startproject app_cymaxx .
 python manage.py makemigrations     #for new migrations made
 python manage.py migrate
