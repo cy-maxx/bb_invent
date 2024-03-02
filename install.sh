@@ -51,8 +51,8 @@ vi /home/ubuntu/.config/subfinder/provider-config.yaml
 ##---configure the provider-config.yaml file with your APIs keys.
 ##how it works
 
-#### BurpSuite configuration ####
-git clone https://github.com/codewatchorg/Burp-UserAgent.git  //for modification of headers into BurpSuite
 subfinder -dL targets/../scope.txt -all -oD /recon -json subfinder_recon.json -cs
 
 
+#### BurpSuite configuration ####
+git clone https://github.com/codewatchorg/Burp-UserAgent.git  //for modification of headers into BurpSuite
