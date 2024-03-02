@@ -55,4 +55,8 @@ subfinder -dL targets/../scope.txt -all -oD /recon -json subfinder_recon.json -c
 
 
 #### BurpSuite configuration ####
-git clone https://github.com/codewatchorg/Burp-UserAgent.git  //for modification of headers into BurpSuite
+_modify Resource Pool to:
+ -1 Concurent request
+ -10 miliseconds delay between them
+_
+
