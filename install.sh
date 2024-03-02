@@ -58,5 +58,8 @@ subfinder -dL targets/../scope.txt -all -oD /recon -json subfinder_recon.json -c
 _modify Resource Pool to:
  -1 Concurent request
  -10 miliseconds delay between them
+_define "Low and Slow" Resource Pool:
+ -1 Concurent request
+ -350 miliseconds delay between them
 _
 
